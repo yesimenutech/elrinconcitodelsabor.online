@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags SEO & Web -->
+    <title>El Rinconcito Del Sabor | Auténtica Comida Mexicana en Austin</title>
+    <meta name="description" content="Visita El Rinconcito Del Sabor en Austin, TX. Desde 2001 ofreciendo comida mexicana llena de sabor, tradición y el toque casero que te hace sentir en familia.">
+    <meta name="keywords" content="Restaurante mexicano, comida mexicana Austin, El Rinconcito del Sabor, tacos, antojitos, comida casera, restaurante familiar, Austin TX">
+    <meta name="author" content="Menutech">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#E53935">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/ElRinconcitoDelSaborLOGO.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://elrinconcitodelsabor.online">
+    <meta property="og:title" content="El Rinconcito Del Sabor | Auténtica Comida Mexicana">
+    <meta property="og:description" content="Más de dos décadas compartiendo sabor, tradición y momentos inolvidables en Austin, TX.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/background_hero.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://elrinconcitodelsabor.online">
+    <meta property="twitter:title" content="El Rinconcito Del Sabor | Auténtica Comida Mexicana">
+    <meta property="twitter:description" content="Más de dos décadas compartiendo sabor, tradición y momentos inolvidables en Austin, TX.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/background_hero.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "El Rinconcito Del Sabor",
+      "image": "https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/ElRinconcitoDelSaborLOGO.png",
+      "description": "Comida llena de sabor, tradición y toque casero desde 2001 en Austin, Texas.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7213 Cameron Rd",
+        "addressLocality": "Austin",
+        "addressRegion": "TX",
+        "postalCode": "78752",
+        "addressCountry": "US"
+      },
+      "url": "https://elrinconcitodelsabor.online",
+      "servesCuisine": "Mexican",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "07:30",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "07:30",
+          "closes": "22:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/erdsaustin",
+        "https://www.instagram.com/el.rinconcito.delsabor/",
+        "https://www.tiktok.com/@elrinconcito_del_sabor?lang=en"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            /* Colores Alegres y Cálidos */
+            --rojo-vibrante: #E53935;
+            --rojo-oscuro: #C62828;
+            --verde-fresco: #43A047;
+            --verde-oscuro: #2E7D32;
+            --dorado-sol: #FBC02D;
+            --dorado-oscuro: #F9A825;
+            --naranja-calido: #FB8C00;
+            --crema-fondo: #FFFDF7;
+            --blanco: #FFFFFF;
+            --texto-principal: #2C2C2C;
+            --texto-suave: #5C5C5C;
+            
+            /* Tipografía */
+            --fuente-titulos: 'Playfair Display', serif;
+            --fuente-textos: 'Poppins', sans-serif;
+            
+            /* UI */
+            --radio-bordes: 24px;
+            --radio-botones: 50px;
+            --sombra-alegre: 0 12px 24px rgba(229, 57, 53, 0.15);
+            --sombra-suave: 0 8px 16px rgba(0, 0, 0, 0.08);
+            --transicion: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Lógica de Traducción */
+        html:not([lang="en"]) .en { display: none !important; }
+        html[lang="en"] .es { display: none !important; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--fuente-textos);
+            color: var(--texto-principal);
+            background-color: var(--crema-fondo);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background-image: radial-gradient(var(--dorado-sol) 0.5px, transparent 0.5px), radial-gradient(var(--dorado-sol) 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            background-attachment: fixed;
+        }
+
+        /* Capa blanca semitransparente para suavizar el patrón */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(255, 253, 247, 0.92);
+            z-index: -1;
+        }
+
+        h1, h2, h3, h4, .titulo {
+            font-family: var(--fuente-titulos);
+            font-weight: 700;
+            color: var(--rojo-oscuro);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transicion);
+        }
+
+        /* Encabezados de Sección */
+        .seccion-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            position: relative;
+        }
+
+        .seccion-titulo {
+            font-size: 3rem;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .seccion-titulo::after {
+            content: '🌿';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+        }
+
+        /* Header / Nav */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: var(--transicion);
+            padding: 0.5rem 0;
+            border-bottom: 3px solid var(--dorado-sol);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            height: 75px;
+            width: auto;
+            object-fit: contain;
+            transition: var(--transicion);
+        }
+
+        .logo img:hover {
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--texto-principal);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--verde-fresco);
+            border-radius: 2px;
+            transition: var(--transicion);
+        }
+
+        .nav-links a:hover {
+            color: var(--verde-oscuro);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: var(--crema-fondo);
+            border: 2px solid var(--dorado-sol);
+            border-radius: 50%;
+            cursor: pointer;
+            font-family: var(--fuente-textos);
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--rojo-oscuro);
+            transition: var(--transicion);
+        }
+
+        .lang-toggle:hover {
+            background: var(--dorado-sol);
+            color: var(--blanco);
+            transform: rotate(360deg);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--rojo-oscuro);
+        }
+
+        /* ===== HERO REDISEÑADO ===== */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 650px;
+            margin-top: 85px;
+            background: url('https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/background_hero.webp') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Overlay degradado cálido sobre la imagen */
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(198, 40, 40, 0.85) 0%,
+                rgba(229, 57, 53, 0.65) 40%,
+                rgba(251, 140, 0, 0.55) 100%
+            );
+            z-index: 1;
+        }
+
+        /* Patrón decorativo sutil encima del overlay */
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(251, 192, 45, 0.3) 0%, transparent 25%),
+                radial-gradient(circle at 80% 70%, rgba(67, 160, 71, 0.25) 0%, transparent 25%),
+                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 40%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem 5%;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(251, 192, 45, 0.95);
+            color: var(--rojo-oscuro);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .hero-title {
+            font-family: var(--fuente-titulos);
+            font-size: 4.5rem;
+            font-weight: 800;
+            color: var(--blanco);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.4);
+        }
+
+        .hero-title .highlight {
+            color: var(--dorado-sol);
+            display: block;
+            font-style: italic;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-ordenar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            padding: 1.2rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--rojo-oscuro);
+            background: linear-gradient(135deg, var(--dorado-sol), var(--naranja-calido));
+            border-radius: var(--radio-botones);
+            box-shadow: 0 8px 25px rgba(251, 192, 45, 0.5);
+            border: 3px solid var(--blanco);
+            cursor: pointer;
+            transition: var(--transicion);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-ordenar::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(135deg, var(--rojo-vibrante), var(--rojo-oscuro));
+            transition: var(--transicion);
+            z-index: -1;
+        }
+
+        .btn-ordenar:hover::before {
+            left: 0;
+        }
+
+        .btn-ordenar:hover {
+            transform: translateY(-5px) scale(1.03);
+            color: var(--blanco);
+            box-shadow: 0 15px 35px rgba(229, 57, 53, 0.5);
+            border-color: var(--dorado-sol);
+        }
+
+        .btn-ordenar svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            color: var(--blanco);
+            font-size: 0.85rem;
+            text-align: center;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator svg {
+            display: block;
+            width: 28px;
+            height: 28px;
+            margin: 0 auto 5px;
+            fill: var(--blanco);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* ===== FEATURES / BADGES ===== */
+        .features {
+            padding: 4rem 5%;
+            background: var(--blanco);
+            position: relative;
+            z-index: 5;
+            margin-top: -50px;
+            border-radius: 40px 40px 0 0;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: var(--radio-bordes);
+            transition: var(--transicion);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-8px);
+            background: var(--crema-fondo);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon svg {
+            width: 35px;
+            height: 35px;
+            fill: var(--blanco);
+        }
+
+        .feature-item:nth-child(1) .feature-icon { background: linear-gradient(135deg, var(--rojo-vibrante), var(--rojo-oscuro)); }
+        .feature-item:nth-child(2) .feature-icon { background: linear-gradient(135deg, var(--verde-fresco), var(--verde-oscuro)); }
+        .feature-item:nth-child(3) .feature-icon { background: linear-gradient(135deg, var(--dorado-sol), var(--naranja-calido)); }
+        .feature-item:nth-child(4) .feature-icon { background: linear-gradient(135deg, var(--naranja-calido), var(--rojo-vibrante)); }
+
+        .feature-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--rojo-oscuro);
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: var(--texto-suave);
+        }
+
+        /* Historia */
+        .historia {
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, var(--blanco) 0%, #FFF8E7 100%);
+            border-radius: 40px;
+            margin: 40px 2%;
+            position: relative;
+            z-index: 10;
+            box-shadow: var(--sombra-suave);
+            border: 3px solid transparent;
+            background-clip: padding-box;
+        }
+
+        .historia::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 43px;
+            background: linear-gradient(135deg, var(--dorado-sol), var(--rojo-vibrante), var(--verde-fresco));
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .historia-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .historia-texto h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .corazon {
+            color: var(--rojo-vibrante);
+            display: inline-block;
+            animation: latido 2s infinite;
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1); }
+            10% { transform: scale(1.2); }
+            20% { transform: scale(1); }
+            30% { transform: scale(1.2); }
+            40%, 100% { transform: scale(1); }
+        }
+
+        .historia-texto p {
+            font-size: 1.15rem;
+            color: var(--texto-suave);
+            margin-bottom: 1.5rem;
+        }
+
+        .historia-texto strong {
+            color: var(--rojo-oscuro);
+            font-size: 1.25rem;
+        }
+
+        .historia-img {
+            position: relative;
+        }
+
+        .historia-img::before {
+            content: '';
+            position: absolute;
+            inset: -15px;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            background: linear-gradient(135deg, var(--dorado-sol), var(--naranja-calido));
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .historia-img img {
+            width: 100%;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            box-shadow: var(--sombra-alegre);
+            transition: var(--transicion);
+        }
+
+        .historia-img img:hover {
+            border-radius: 50%;
+            transform: rotate(2deg) scale(1.02);
+        }
+
+        /* Galería */
+        .galeria {
+            padding: 6rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+            grid-auto-rows: 220px;
+            grid-auto-flow: dense;
+        }
+
+        .galeria-item {
+            border-radius: var(--radio-bordes);
+            overflow: hidden;
+            box-shadow: var(--sombra-suave);
+            position: relative;
+            cursor: pointer;
+            transition: var(--transicion);
+        }
+
+        .galeria-item:nth-child(3n) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        
+        .galeria-item:nth-child(7n) {
+            grid-column: span 2;
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .galeria-item:hover {
+            box-shadow: var(--sombra-alegre);
+            z-index: 2;
+        }
+
+        .galeria-item:hover img {
+            transform: scale(1.1) rotate(1deg);
+        }
+
+        .galeria-item::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to top, rgba(229,57,53,0.5), transparent 60%);
+            opacity: 0;
+            transition: var(--transicion);
+        }
+
+        .galeria-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Contacto */
+        .contacto {
+            padding: 6rem 5%;
+            background: linear-gradient(135deg, var(--blanco) 0%, #FFF3E0 100%);
+            border-radius: 40px;
+            margin: 0 2% 40px;
+            box-shadow: var(--sombra-suave);
+        }
+
+        .contacto-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .contacto-info {
+            background: var(--blanco);
+            padding: 2.5rem;
+            border-radius: var(--radio-bordes);
+            border: 2px dashed var(--dorado-sol);
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .info-icono {
+            background: linear-gradient(135deg, var(--rojo-vibrante), var(--rojo-oscuro));
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(229,57,53,0.3);
+            flex-shrink: 0;
+        }
+
+        .info-icono svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--blanco);
+        }
+
+        .info-texto h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            color: var(--rojo-oscuro);
+        }
+
+        .info-texto p {
+            color: var(--texto-suave);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .mapa-contenedor {
+            border-radius: var(--radio-bordes);
+            overflow: hidden;
+            box-shadow: var(--sombra-suave);
+            height: 100%;
+            min-height: 350px;
+            border: 4px solid var(--blanco);
+        }
+
+        .mapa-contenedor iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #2C2C2C 0%, #1a1a1a 100%);
+            color: rgba(255,255,255,0.85);
+            padding: 5rem 5% 2rem;
+            position: relative;
+            border-top: 5px solid var(--rojo-vibrante);
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--rojo-vibrante), var(--dorado-sol), var(--verde-fresco), var(--rojo-vibrante));
+            background-size: 300% 100%;
+            animation: gradientMove 6s linear infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 300% 50%; }
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo {
+            max-width: 220px;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+        }
+
+        .footer-col h4 {
+            font-size: 1.3rem;
+            color: var(--dorado-sol);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 8px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background: var(--rojo-vibrante);
+            border-radius: 2px;
+        }
+
+        .footer-col ul a {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .footer-col ul a:hover {
+            color: var(--dorado-sol);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            color: var(--blanco);
+            border: 2px solid rgba(255,255,255,0.2);
+            transition: var(--transicion);
+        }
+
+        .social-links a:hover {
+            background: var(--rojo-vibrante);
+            border-color: var(--dorado-sol);
+            transform: translateY(-5px) rotate(8deg);
+        }
+
+        .social-links svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px dashed rgba(255,255,255,0.15);
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .footer-bottom a {
+            color: var(--dorado-sol);
+            font-weight: 700;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--rojo-vibrante);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .historia-container, .contacto-grid {
+                grid-template-columns: 1fr;
+            }
+            .historia-img {
+                order: -1;
+            }
+            .mapa-contenedor {
+                min-height: 300px;
+            }
+            .galeria-item:nth-child(3n), .galeria-item:nth-child(7n) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+            .galeria-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                grid-auto-rows: 160px;
+            }
+            .hero-title {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 85px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 85px);
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                transition: var(--transicion);
+                font-size: 1.2rem;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .lang-toggle {
+                margin-right: 10px;
+            }
+
+            .hero {
+                height: 90vh;
+                min-height: 550px;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .btn-ordenar {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
+            .historia {
+                margin: 0;
+                border-radius: 0;
+            }
+            .contacto {
+                margin: 0;
+                border-radius: 0;
+            }
+            .features {
+                border-radius: 0;
+                margin-top: 0;
+                padding: 3rem 5%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            .hero-badge {
+                font-size: 0.7rem;
+                padding: 0.4rem 1rem;
+            }
+            .seccion-titulo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/ElRinconcitoDelSaborLOGO.png" alt="El Rinconcito Del Sabor Logo">
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#inicio"><span class="es">Inicio</span><span class="en">Home</span></a></li>
+                    <li><a href="#historia"><span class="es">Nuestra Historia</span><span class="en">Our Story</span></a></li>
+                    <li><a href="#galeria"><span class="es">Platillos</span><span class="en">Dishes</span></a></li>
+                    <li><a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Cambiar Idioma / Change Language">
+                    <span class="es">EN</span><span class="en">ES</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO REDISEÑADO CON CONTENIDO ===== -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="hero-badge">
+                    <span class="es">✦ Desde 2001 ✦</span>
+                    <span class="en">✦ Since 2001 ✦</span>
+                </span>
+                
+                <h1 class="hero-title">
+                    <span class="es">El Rinconcito</span>
+                    <span class="en">El Rinconcito</span>
+                    <span class="highlight">
+                        <span class="es">Del Sabor</span>
+                        <span class="en">Del Sabor</span>
+                    </span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    <span class="es">Auténtica comida mexicana llena de sabor, tradición y el toque casero que te hace sentir en familia.</span>
+                    <span class="en">Authentic Mexican food full of flavor, tradition, and the homemade touch that makes you feel at home.</span>
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="https://elrinconcitodelsabor.onlineordering.io/en/menu" target="_blank" rel="noopener noreferrer" class="btn-ordenar">
+                        <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                        <span class="es">Ordenar en Línea</span>
+                        <span class="en">Order Online</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                <span class="es">Descubre más</span>
+                <span class="en">Discover more</span>
+            </div>
+        </section>
+
+        <!-- ===== FEATURES / BADGES ===== -->
+        <section class="features">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <h3><span class="es">Sabor Auténtico</span><span class="en">Authentic Flavor</span></h3>
+                    <p><span class="es">Recetas tradicionales mexicanas</span><span class="en">Traditional Mexican recipes</span></p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                    <h3><span class="es">Ambiente Familiar</span><span class="en">Family Atmosphere</span></h3>
+                    <p><span class="es">Un lugar para compartir</span><span class="en">A place to share</span></p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    </div>
+                    <h3><span class="es">Abierto Temprano</span><span class="en">Open Early</span></h3>
+                    <p><span class="es">Desde las 7:30 AM</span><span class="en">From 7:30 AM</span></p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <h3><span class="es">Hecho con Amor</span><span class="en">Made with Love</span></h3>
+                    <p><span class="es">Más de 20 años de tradición</span><span class="en">Over 20 years of tradition</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Historia -->
+        <section id="historia" class="historia">
+            <div class="historia-container">
+                <div class="historia-texto">
+                    <h2 class="titulo">El Rinconcito Del Sabor <span class="corazon">❤️️</span></h2>
+                    
+                    <div class="es">
+                        <p>Desde el 1 de agosto de 2001, El Rinconcito Del Sabor comenzó su historia con un sueño: ofrecer comida llena de sabor, tradición y ese toque casero que hace sentir a todos como en casa.</p>
+                        <p>Con el paso de los años, se ha convertido en un lugar especial para compartir en familia y disfrutar de deliciosos platillos preparados con dedicación y cariño.</p>
+                        <p><strong>Más de dos décadas compartiendo sabor, tradición y momentos inolvidables. ✨</strong></p>
+                    </div>
+
+                    <div class="en">
+                        <p>Since August 1st, 2001, El Rinconcito Del Sabor began its history with a dream: to offer food full of flavor, tradition, and that homemade touch that makes everyone feel at home.</p>
+                        <p>Over the years, it has become a special place to share with family and enjoy delicious dishes prepared with dedication and love.</p>
+                        <p><strong>Over two decades sharing flavor, tradition, and unforgettable moments. ✨</strong></p>
+                    </div>
+                </div>
+                <div class="historia-img">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/fachada%201.webp" alt="Fachada de El Rinconcito Del Sabor" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section id="galeria" class="galeria">
+            <div class="seccion-header">
+                <h2 class="seccion-titulo">
+                    <span class="es">Nuestros Platillos</span>
+                    <span class="en">Our Dishes</span>
+                </h2>
+            </div>
+
+            <div class="galeria-grid">
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish1.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish2.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish3.webp" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish4.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish5.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish6.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish7.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish8.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish9.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/dish10.jpg" alt="Platillo" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/drink.jpg" alt="Bebida" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/drink1.jpg" alt="Bebida" loading="lazy"></div>
+                <div class="galeria-item"><img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/drink2.jpg" alt="Bebida" loading="lazy"></div>
+            </div>
+        </section>
+
+        <!-- Contacto y Mapa -->
+        <section id="contacto" class="contacto">
+            <div class="seccion-header">
+                <h2 class="seccion-titulo">
+                    <span class="es">Visítanos</span>
+                    <span class="en">Visit Us</span>
+                </h2>
+            </div>
+
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="info-item">
+                        <div class="info-icono">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <div class="info-texto">
+                            <h3><span class="es">Ubicación</span><span class="en">Location</span></h3>
+                            <p>7213 Cameron Rd<br>Austin, TX 78752<br>United States</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icono">
+                            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <div class="info-texto">
+                            <h3><span class="es">Horarios</span><span class="en">Hours</span></h3>
+                            <p>
+                                <span class="es"><strong>Dom - Jue:</strong> 7:30 AM - 9:00 PM</span>
+                                <span class="en"><strong>Sun - Thu:</strong> 7:30 AM - 9:00 PM</span><br>
+                                <span class="es"><strong>Vie - Sáb:</strong> 7:30 AM - 10:00 PM</span>
+                                <span class="en"><strong>Fri - Sat:</strong> 7:30 AM - 10:00 PM</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mapa-contenedor">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.1843076135894!2d-97.6976695!3d30.3175811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca0a5a3a5e8b%3A0xc66c05eb3a13d719!2s7213%20Cameron%20Rd%2C%20Austin%2C%20TX%2078752!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps Location">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="https://raw.githubusercontent.com/yesimenutech/elrinconcitodelsabor.online/main/img1/ElRinconcitoDelSaborLOGO.png" alt="El Rinconcito Del Sabor Logo" class="footer-logo">
+                <p>
+                    <span class="es">Llevando el auténtico sabor mexicano a tu mesa desde 2001.</span>
+                    <span class="en">Bringing authentic Mexican flavor to your table since 2001.</span>
+                </p>
+            </div>
+            
+            <div class="footer-col">
+                <h4><span class="es">Menú del Sitio</span><span class="en">Site Menu</span></h4>
+                <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.8rem;">
+                    <li><a href="#inicio"><span class="es">Inicio</span><span class="en">Home</span></a></li>
+                    <li><a href="#historia"><span class="es">Historia</span><span class="en">Story</span></a></li>
+                    <li><a href="#galeria"><span class="es">Platillos</span><span class="en">Dishes</span></a></li>
+                    <li><a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4><span class="es">Nuestras Redes</span><span class="en">Our Socials</span></h4>
+                <p>
+                    <span class="es">Síguenos para más sabor y tradición.</span>
+                    <span class="en">Follow us for more flavor and tradition.</span>
+                </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/erdsaustin" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/el.rinconcito.delsabor/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@elrinconcito_del_sabor?lang=en" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.63 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p id="copyrightText"></p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // 1. Lógica Dinámica del Año
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyrightText').innerHTML = `&copy; 2015 - ${currentYear} Powered by <a href="https://menutech.xyz" target="_blank" rel="noopener">Menutech</a>`;
+
+        // 2. Lógica de Cambio de Idioma Sin Recarga
+        const langToggleBtn = document.getElementById('langToggle');
+        const htmlTag = document.documentElement;
+        
+        const savedLang = localStorage.getItem('siteLang') || 'es';
+        htmlTag.setAttribute('lang', savedLang);
+
+        langToggleBtn.addEventListener('click', () => {
+            const currentLang = htmlTag.getAttribute('lang');
+            if (currentLang === 'es') {
+                htmlTag.setAttribute('lang', 'en');
+                localStorage.setItem('siteLang', 'en');
+            } else {
+                htmlTag.setAttribute('lang', 'es');
+                localStorage.setItem('siteLang', 'es');
+            }
+        });
+
+        // 3. Menú Móvil
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // 4. Header con sombra al hacer scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.style.padding = '0.2rem 0';
+                header.style.boxShadow = '0 6px 30px rgba(0,0,0,0.12)';
+            } else {
+                header.style.padding = '0.5rem 0';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
+            }
+        });
+    </script>
+</body>
+</html>
